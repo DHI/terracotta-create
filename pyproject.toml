@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "terracotta-create"
+version = "0.1.0"
+description = "Create the terracotta metadata store in a new database"
+authors = ["Marie Lund Larsen <mlla@dhigroup.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+terracotta = "0.8.3"
+psycopg2-binary = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
