@@ -1,0 +1,8 @@
+README.md
+create_tc_db.py
+pyproject.toml
+terracotta_create.egg-info/PKG-INFO
+terracotta_create.egg-info/SOURCES.txt
+terracotta_create.egg-info/dependency_links.txt
+terracotta_create.egg-info/requires.txt
+terracotta_create.egg-info/top_level.txt

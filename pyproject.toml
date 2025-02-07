@@ -1,16 +1,15 @@
-[tool.poetry]
+[project]
 name = "terracotta-create"
 version = "0.1.0"
-description = "Create the terracotta metadata store in a new database"
-authors = ["Marie Lund Larsen <mlla@dhigroup.com>"]
+description = "Add your description here"
 readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "psycopg2-binary>=2.9.10",
+    "terracotta==0.8.3",
+]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-terracotta = "0.8.3"
-psycopg2-binary = "^2.9.9"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]

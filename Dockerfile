@@ -1,5 +1,5 @@
 # Pull base image
-FROM python:3.10-slim
+FROM python:3.12-slim
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -9,11 +9,11 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /code/
 
 # install dependencies
-RUN pip install poetry
+RUN pip install uv
 COPY pyproject.toml /code/
 
-RUN poetry config virtualenvs.create false
-RUN poetry install --no-interaction --no-ansi
+RUN uv build
+RUN pip install .
 
 # copy code to container
 COPY . /code/
